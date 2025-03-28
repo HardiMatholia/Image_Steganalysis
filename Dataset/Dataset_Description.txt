@@ -1,0 +1,4 @@
+To test the model's functionality, a subset of the dataset has been uploaded, as the original dataset is quite large. The full dataset contains 200K training images and 18K testing images, totaling 50 GB. It can be accessed at https://github.com/YangzlTHU/IStego100K. The uploaded subset includes the following:
+•	100 Cover images for training, located in the "Cover" directory
+•	100 Stego images for training, located in the "Stego" directory
+•	25 Test images, located in the "Test" directory
