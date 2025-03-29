@@ -8,6 +8,10 @@ Steganalysis is the process of detecting hidden messages in digital images that 
 
 <img src="steg.png" alt="Steganalysis" width="700">
 
+The study proposes a deep learning-based classifier to distinguish between original and stego-images, enhancing digital media security. Building on the promising results of convolutional neural networks (CNNs) in image classification, the research will integrate innovative methods to make stego-image detection more robust and efficient for real-world applications. The overall project workflow is depicted below.
+
+<img src="Workflow.png" alt="Workflow" width="700">
+
 ## Data
 The proposed architecture is trained on IStego100K dataset. It contains 208,104 images with the same size of 1024*1024. Among them, 200,000 images (100,000 cover-stego image pairs) are divided as the training set and the remaining 8,104 as testing set. For each image in IStego100K, the quality factors is randomly set in the range of 75-95, the steganographic algorithm is randomly selected from three well-known steganographic algorithms, which are J-uniward, nsF5 and UERD, and the embedding rate is also randomly set to be a value of 0.1-0.4.
 
