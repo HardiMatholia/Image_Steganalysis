@@ -12,7 +12,11 @@ Steganalysis is the process of detecting hidden messages in digital images that 
 The proposed architecture is trained on IStego100K dataset. It contains 208,104 images with the same size of 1024*1024. Among them, 200,000 images (100,000 cover-stego image pairs) are divided as the training set and the remaining 8,104 as testing set. For each image in IStego100K, the quality factors is randomly set in the range of 75-95, the steganographic algorithm is randomly selected from three well-known steganographic algorithms, which are J-uniward, nsF5 and UERD, and the embedding rate is also randomly set to be a value of 0.1-0.4.
 
 ## Installation 
+Clone the repo
+<button onclick="navigator.clipboard.writeText('git clone https://github.com/HardiMatholia/Image_Steganalysis.git')">Copy</button>
 
+Change directory
+<button onclick="navigator.clipboard.writeText('cd Image_Steganalysis')">Copy</button>
 
 
 
