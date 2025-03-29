@@ -13,6 +13,7 @@ The proposed architecture is trained on IStego100K dataset. It contains 208,104 
 
 ## Installation 
 Clone the repo
+```bash
 <button onclick="navigator.clipboard.writeText('git clone https://github.com/HardiMatholia/Image_Steganalysis.git')">Copy</button>
 
 Change directory
