@@ -21,8 +21,11 @@ git clone https://github.com/HardiMatholia/Image_Steganalysis.git
 cd Image_Steganalysis
 ```
 
-## Training and Evaluating
-* Change the paths of Stego_dir 
+## Training and Evaluation
+* Change the paths of stego_dir, cover_dir, and test_dir to the appropriate dataset locations
+* Install the required python dependencies
+* Execute the main.py python file from the code directory 
+
 
 
 
