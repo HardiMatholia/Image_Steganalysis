@@ -6,6 +6,9 @@ As digital communication and multimedia technologies evolve, ensuring the securi
 
 Steganalysis is the process of detecting hidden messages in digital images that have been concealed using steganography. It involves analyzing images for suspicious patterns or features to uncover concealed information and mitigate the risks posed by the malicious use of steganography.
 
+![Steganalysis](steg.png)
+
+
 
 
 
