@@ -1,0 +1,17 @@
+To test the model's functionality, a subset of the dataset has been uploaded, as the original dataset is quite large. The full dataset contains 300K training images and 5K testing images, totaling 32 GB. It can be accessed at https://www.kaggle.com/competitions/alaska2-image-steganalysis/data. The uploaded subset includes the following:
+•	100 Cover images for training, located in the "Cover" directory
+•	100 stego images for training using the JUNIWARD stego technique, located in the "JUNIWARD" directory.
+•	100 stego images for training using the JMiPOD stego technique, located in the "JMiPOD" directory.
+•	100 stego images for training using the UERD stego technique, located in the "UERD" directory.
+•	For testing, since the test set images were not labeled, 15% of the training data was used for testing.
+Note: For each experiment, cover images were paired with stego images from only one stego technique at a time.
+
+
+
+
+
+
+
+
+
+

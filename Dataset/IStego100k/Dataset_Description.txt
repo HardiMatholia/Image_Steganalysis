@@ -2,3 +2,4 @@ To test the model's functionality, a subset of the dataset has been uploaded, as
 •	100 Cover images for training, located in the "Cover" directory
 •	100 Stego images for training, located in the "Stego" directory
 •	25 Test images, located in the "Test" directory
+Note: The ground-truth labels for test images are in a JSON file. 
