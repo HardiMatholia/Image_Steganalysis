@@ -18,12 +18,12 @@ Two large-scale benchmark datasets were used in this study:
 IStego100K is a large-scale image steganalysis dataset comprising 208,104 JPEG images, all with a resolution of 1024×1024 pixels. It includes 100,000 cover-stego image pairs (200,000 images) used for training and 8,104 images reserved for testing. Each stego image is generated using one of three well-known transform-domain steganographic algorithms: J-UNIWARD, nsF5, or UERD. These are transform-domain embedding methods (i.e., the hidden message is embedded in the DCT coefficients of JPEG images), which makes stego signals more difficult to detect using pixel-domain features. For each image, the stego algorithm is randomly selected, the embedding rate is randomly sampled from a range of 0.1 to 0.4 bits per non-zero AC DCT coefficient, and the JPEG quality factor is randomly chosen between 75 and 95. This variability makes the dataset realistic and challenging for learning generalizable steganalysis features.
 
 ### 2. ALASKA2:
-ALASKA2 is a public dataset released as part of the ALASKA2 steganalysis competition hosted on Kaggle \cite{alaska2_steganalysis}. It contains 300,000 JPEG images of size 512×512, split equally between cover images and stego images. Stego images are generated using three modern transform-domain steganographic algorithms: JMiPOD, J-UNIWARD, and UERD. These are transform-domain embedding methods (i.e., the hidden message is embedded in the DCT coefficients of JPEG images), which makes stego signals more difficult to detect using pixel-domain features. The dataset structure is as follows:
+ALASKA2 is a public dataset released as part of the ALASKA2 steganalysis competition hosted on Kaggle. It contains 300,000 JPEG images of size 512×512, split equally between cover images and stego images. Stego images are generated using three modern transform-domain steganographic algorithms: JMiPOD, J-UNIWARD, and UERD. The dataset structure is as follows:
 
-    ### 1. Cover: 75,000 original JPEG images without any hidden data.
-    ### 2. JMiPOD: 75,000 stego images produced using the JMiPOD algorithm.
-    ### 3. J-UNIWARD: 75,000 stego images generated using the J-UNIWARD algorithm.
-    ### 4. UERD: 75,000 stego images created using the UERD algorithm.
+    #### 1. Cover: 75,000 original JPEG images without any hidden data.
+    #### 2. JMiPOD: 75,000 stego images produced using the JMiPOD algorithm.
+    #### 3. J-UNIWARD: 75,000 stego images generated using the J-UNIWARD algorithm.
+    #### 4. UERD: 75,000 stego images created using the UERD algorithm.
 
 Unlike IStego100K, the exact payload for each image is not explicitly provided. Instead, the embedding process dynamically adjusts the payload to maintain a consistent detection difficulty. For example, complex or textured regions may carry higher payloads, while smoother regions embed less. The average payload is approximately 0.4 bits per non-zero AC DCT coefficient. JPEG compression quality factors used in the dataset are 75, 90, and 95. Each embedding algorithm is used with approximately equal probability.
 
