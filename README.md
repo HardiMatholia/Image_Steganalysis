@@ -8,9 +8,13 @@ Steganalysis is the process of detecting hidden messages in digital images that 
 
 <img src="steg.png" alt="Steganalysis" width="700">
 
-The study proposes a deep learning-based classifier to distinguish between original and stego-images, enhancing digital media security. Building on the promising results of convolutional neural networks (CNNs) in image classification, the research will integrate innovative methods to make stego-image detection more robust and efficient for real-world applications. The overall project workflow is depicted below.
+The objective of this study was to detect transform-domain stego images using a deep learning pipeline based on transfer learning. EfficientNetB3 was selected as the backbone architecture, motivated by prior work that reported strong performance on the ALASKA2 dataset. The overall workflow of the proposed method is depicted below. To enhance the stego signal, two types of image preprocessing techniques were applied: high-pass filtering and Gabor filtering. These techniques helped to emphasize subtle modifications introduced during steganographic embedding before the images were passed to the classification model. The overall project workflow is depicted below.
 
 <img src="Workflow.png" alt="Workflow" width="700">
+
+EfficientNetB3 was used as the primary backbone due to its favorable accuracy-to-parameter ratio. It uses compound scaling to adjust depth, width, and resolution in a coordinated manner which maximizes efficiency. The model was initialized with pretrained weights from ImageNet and fine-tuned for binary classification by replacing the final classification head with a fully connected layer producing two output logits.
+
+To evaluate the effect of different architectures on steganalysis performance, experiments were also conducted using VGG19, ResNet101, and BayarConvNet. VGG19 and ResNet101 are well-established convolutional neural networks known for their strong performance in image classification tasks. BayarConvNet, originally proposed for steganalysis, utilizes constrained convolutional kernels to better capture stego-specific noise patterns.
 
 ## Data
 Two large-scale benchmark datasets were used in this study:
