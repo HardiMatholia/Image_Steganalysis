@@ -20,10 +20,10 @@ IStego100K is a large-scale image steganalysis dataset comprising 208,104 JPEG i
 ### 2. ALASKA2:
 ALASKA2 is a public dataset released as part of the ALASKA2 steganalysis competition hosted on Kaggle. It contains 300,000 JPEG images of size 512×512, split equally between cover images and stego images. Stego images are generated using three modern transform-domain steganographic algorithms: JMiPOD, J-UNIWARD, and UERD. The dataset structure is as follows:
 
-    #### 1. Cover: 75,000 original JPEG images without any hidden data.
-    #### 2. JMiPOD: 75,000 stego images produced using the JMiPOD algorithm.
-    #### 3. J-UNIWARD: 75,000 stego images generated using the J-UNIWARD algorithm.
-    #### 4. UERD: 75,000 stego images created using the UERD algorithm.
+    1. **Cover**: 75,000 original JPEG images without any hidden data.
+    2. **JMiPOD**: 75,000 stego images produced using the JMiPOD algorithm.
+    3. **J-UNIWARD**: 75,000 stego images generated using the J-UNIWARD algorithm.
+    4. **UERD**: 75,000 stego images created using the UERD algorithm.
 
 Unlike IStego100K, the exact payload for each image is not explicitly provided. Instead, the embedding process dynamically adjusts the payload to maintain a consistent detection difficulty. For example, complex or textured regions may carry higher payloads, while smoother regions embed less. The average payload is approximately 0.4 bits per non-zero AC DCT coefficient. JPEG compression quality factors used in the dataset are 75, 90, and 95. Each embedding algorithm is used with approximately equal probability.
 
