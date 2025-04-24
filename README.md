@@ -13,7 +13,19 @@ The study proposes a deep learning-based classifier to distinguish between origi
 <img src="Workflow.png" alt="Workflow" width="700">
 
 ## Data
-The proposed architecture is trained on IStego100K dataset. It contains 208,104 images with the same size of 1024*1024. Among them, 200,000 images (100,000 cover-stego image pairs) are divided as the training set and the remaining 8,104 as testing set. For each image in IStego100K, the quality factors is randomly set in the range of 75-95, the steganographic algorithm is randomly selected from three well-known steganographic algorithms, which are J-uniward, nsF5 and UERD, and the embedding rate is also randomly set to be a value of 0.1-0.4.
+Two large-scale benchmark datasets were used in this study:
+### 1. IStego100K: 
+IStego100K is a large-scale image steganalysis dataset comprising 208,104 JPEG images, all with a resolution of 1024×1024 pixels. It includes 100,000 cover-stego image pairs (200,000 images) used for training and 8,104 images reserved for testing. Each stego image is generated using one of three well-known transform-domain steganographic algorithms: J-UNIWARD, nsF5, or UERD. These are transform-domain embedding methods (i.e., the hidden message is embedded in the DCT coefficients of JPEG images), which makes stego signals more difficult to detect using pixel-domain features. For each image, the stego algorithm is randomly selected, the embedding rate is randomly sampled from a range of 0.1 to 0.4 bits per non-zero AC DCT coefficient, and the JPEG quality factor is randomly chosen between 75 and 95. This variability makes the dataset realistic and challenging for learning generalizable steganalysis features.
+
+### 2. ALASKA2:
+ALASKA2 is a public dataset released as part of the ALASKA2 steganalysis competition hosted on Kaggle \cite{alaska2_steganalysis}. It contains 300,000 JPEG images of size 512×512, split equally between cover images and stego images. Stego images are generated using three modern transform-domain steganographic algorithms: JMiPOD, J-UNIWARD, and UERD. These are transform-domain embedding methods (i.e., the hidden message is embedded in the DCT coefficients of JPEG images), which makes stego signals more difficult to detect using pixel-domain features. The dataset structure is as follows:
+
+    ### 1. Cover: 75,000 original JPEG images without any hidden data.
+    ### 2. JMiPOD: 75,000 stego images produced using the JMiPOD algorithm.
+    ### 3. J-UNIWARD: 75,000 stego images generated using the J-UNIWARD algorithm.
+    ### 4. UERD: 75,000 stego images created using the UERD algorithm.
+
+Unlike IStego100K, the exact payload for each image is not explicitly provided. Instead, the embedding process dynamically adjusts the payload to maintain a consistent detection difficulty. For example, complex or textured regions may carry higher payloads, while smoother regions embed less. The average payload is approximately 0.4 bits per non-zero AC DCT coefficient. JPEG compression quality factors used in the dataset are 75, 90, and 95. Each embedding algorithm is used with approximately equal probability.
 
 ## Installation 
 ### 1. Clone the repo 
