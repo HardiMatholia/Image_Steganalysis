@@ -61,9 +61,11 @@ git clone https://github.com/HardiMatholia/Image_Steganalysis.git
 cd Image_Steganalysis
 ```
 
-# 🧠 Training and Evaluation Instructions
+---
 
-## 📁 File Naming Convention
+## 🧠 Training and Evaluation Instructions
+
+### 📁 File Naming Convention
 - Code files follow the naming convention:  
   **`<ArchitectureName>Main<DatasetName>.py`**
   
@@ -73,7 +75,7 @@ cd Image_Steganalysis
 
 ---
 
-## 🔧 Setup Instructions
+### 🔧 Setup Instructions
 
 1. **Update Dataset Paths**  
    - Modify the paths to the **stego**, **cover**, and **test** directories in the script to match the dataset locations on your machine.
@@ -89,7 +91,7 @@ cd Image_Steganalysis
 
 ---
 
-## 📊 What You Will See
+### 📊 What You Will See
 
 - Training and validation **loss/accuracy** for each epoch.
 - Final **Test Accuracy** and **AUC Score** at the end of training, which help evaluate model performance.
