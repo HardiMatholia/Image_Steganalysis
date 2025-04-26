@@ -81,7 +81,7 @@ cd Image_Steganalysis
    - Modify the paths to the **stego**, **cover**, and **test** directories in the script to match the dataset locations on your machine.
 
 2. **Install Dependencies**  
-   - Make sure all required Python packages are installed:  
+   - Make sure all required Python packages are installed 
 
 3. **Run the Script**  
    - Execute the corresponding Python file:  
