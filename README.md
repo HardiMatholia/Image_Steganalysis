@@ -41,10 +41,49 @@ git clone https://github.com/HardiMatholia/Image_Steganalysis.git
 cd Image_Steganalysis
 ```
 
-## Training and Evaluation
-* Change the paths of stego_dir, cover_dir, and test_dir to the appropriate dataset locations
-* Install the required python dependencies
-* Execute the main.py python file from the code directory 
+
+# 🧠 Training and Evaluation Instructions
+
+## 📁 File Naming Convention
+- Code files follow the naming convention:  
+  **`<ArchitectureName>Main<DatasetName>.py`**
+  
+- **Example**:  
+  For training EfficientNetB3 on the IStego100k dataset, the script will be:  
+  `EfficientNetB3MainIStego.py`
+
+---
+
+## 🔧 Setup Instructions
+
+1. **Update Dataset Paths**  
+   - Modify the paths to the **stego**, **cover**, and **test** directories in the script to match the dataset locations on your machine.
+
+2. **Install Dependencies**  
+   - Make sure all required Python packages are installed:  
+     ```bash
+     pip install -r requirements.txt
+     ```
+     (Or install them individually if a `requirements.txt` is not provided.)
+
+3. **Run the Script**  
+   - Execute the corresponding Python file:  
+     ```bash
+     python EfficientNetB3MainIStego.py
+     ```
+
+---
+
+## 📊 What You Will See
+
+- Training and validation **loss/accuracy** for each epoch.
+- Final **Test Accuracy** and **AUC Score** at the end of training, which help evaluate model performance.
+
+---
+
+✅ *Happy Training!* 😊  
+
+ 
 
 
 
