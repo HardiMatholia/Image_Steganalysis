@@ -80,10 +80,6 @@ cd Image_Steganalysis
 
 2. **Install Dependencies**  
    - Make sure all required Python packages are installed:  
-     ```bash
-     pip install -r requirements.txt
-     ```
-     (Or install them individually if a `requirements.txt` is not provided.)
 
 3. **Run the Script**  
    - Execute the corresponding Python file:  
